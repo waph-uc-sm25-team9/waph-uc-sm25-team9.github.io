@@ -3,12 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Team Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2rem;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+        }
+        .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+        .member-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            padding: 1rem;
+            text-align: center;
+            width: 250px;
+        }
+        .member-card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .member-card h2 {
+            margin: 1rem 0 0.5rem;
+        }
+        .member-card p {
+            margin: 0.5rem 0;
+        }
+        .member-card a {
+            display: inline-block;
+            margin-top: 0.5rem;
+            text-decoration: none;
+            color: #007acc;
+        }
+    </style>
 </head>
 <body>
-    
+
+    <h1>Our Team</h1>
+    <div class="team-container">
+        <div class="member-card">
+            <img src="images/headshot_hemmeraj.jpg" alt="Adam Hemmert">
+            <h2>Adam Hemmert</h2>
+            <p>Electrical Engineering + MBA student<br>Web Security & Dev Enthusiast</p>
+            <a href="https://hemmi5.github.io/" target="_blank">Personal Homepage</a>
+        </div>
+
+        <!-- Duplicate and edit this block for each additional team member -->
+        <!--
+        <div class="member-card">
+            <img src="images/headshot_other.jpg" alt="Other Name">
+            <h2>Other Name</h2>
+            <p>Major | Role</p>
+            <a href="https://other-url.github.io/" target="_blank">Personal Homepage</a>
+        </div>
+        -->
+
+    </div>
+
 </body>
-<footer>
-    
-</footer>
 </html>
